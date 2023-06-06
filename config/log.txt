@@ -1,0 +1,11 @@
+version1: ResNet 50, 固定型的数据集划分, 固定学习率
+
+        self.mlp = nn.Sequential(
+            nn.ReLU(),
+            nn.Linear(self.rep_dim, self.class_num)
+        )
+
+        
+version2: ResNet 50, 
+
+version0: MyResNet, Adam()

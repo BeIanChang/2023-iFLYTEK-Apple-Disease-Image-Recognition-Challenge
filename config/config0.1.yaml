@@ -1,6 +1,6 @@
 # dataset
-train_dir: "/data/zhangyangyang/leaves_prediction/data/train/"
-test_dir: "/data/zhangyangyang/leaves_prediction/data/test/"
+train_dir: "./train/"
+test_dir: "./test/"
 ratio: 0.8
 picture_size: 224
 
@@ -23,4 +23,4 @@ learning_rate: 0.001
 grad_clip: 0.1
 
 # plt
-plt_path: "/data/zhangyangyang/leaves_prediction/plt_save/"
+plt_path: "./plt_save/"

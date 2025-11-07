@@ -2,11 +2,6 @@
 
 End-to-end PyTorch pipeline that delivered ~90% validation accuracy in the 2023 iFLYTEK competition for apple disease detection (<https://challenge.xfyun.cn/topic/info?type=apple-diseases&option=ssgy>). The project covers the entire training and inference workflow, turning raw orchard imagery into leaderboard-ready submissions while keeping the codebase configurable and reproducible.
 
-## Why It Matters
-- **Competition Grade:** Balanced accuracy with throughput to hit the top percentiles without overfitting.
-- **Production Friendly:** Modular data, model, and evaluation layers wired through YAML configs so teammates can rerun experiments with small CLI tweaks.
-- **Future Proof:** Clear instrumentation (plots, CSV exports, checkpoints) makes it easy to spot regressions or track experiments.
-
 ## Architecture Snapshot
 ```
 config/           YAML hyperparameter packs exposed as CLI arguments
@@ -26,8 +21,6 @@ data_check.ipynb  Optional exploratory notebook
 
 ## Environment Setup
 ```bash
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118   # pick the wheel that matches your CUDA/CPU setup
 pip install torchsummary tqdm matplotlib pyyaml numpy pandas scikit-learn imbalanced-learn
 ```
